@@ -1,8 +1,10 @@
-const { OpenApiClient } = require('../src')
+const {
+  OpenApiClient
+} = require('../src')
 
 async function getOrganizationsByParent () {
-  const accessId = 'RqA7yCICYBtsJazutNSF'
-  const secretKey = 'i38rdlXmmWUehDF+o38hGMk7F9WKgUxAUebjYCvKR'
+  const accessId = 'HwlkBPd8S39bvZFQzxet'
+  const secretKey = 'IbBh1H5EVq8TUy0wib64RcLKepMTsisAp47Ehupl'
   const baseUrl = 'https://api.mctech.vip'
   const client = new OpenApiClient(baseUrl, accessId, secretKey)
   const result = await client.get('/mquantity/organizations-parent?parentId=-1')

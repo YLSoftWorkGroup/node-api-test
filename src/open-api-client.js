@@ -70,7 +70,6 @@ class OpenApiClient {
       resourceUrl: option.url,
       headers: option.headers || {}
     })
-
     option.json = true
     option.headers = Object.assign({}, option.headers, signatureInfo)
     try {
