@@ -2,13 +2,13 @@ const {
   OpenApiClient
 } = require('../src')
 
-const accessId = 'Yh56fc7XY8zAmmGlMQ6T'
-const secretKey = 'x8BwdxdrOHYIFpP8QZgckh80zw8HewPQdCF0B4xI'
-const baseUrl = 'http://192.168.1.23'
+const accessId = 'm7EUXsPB5jhHiZxvSwde'
+const secretKey = 'wJZApqPSQuJBwm9Qa1oJ2fmLXT2bhrQc9yX5U/3r'
+const baseUrl = 'http://dev.mctech.vip'
 const client = new OpenApiClient(baseUrl, accessId, secretKey)
 
 async function getOrganizationsByParent() {
-  const result = await client.get('/api/mquantity/organizations-parent?parentId=-1')
+  return await client.get('/api/mquantity/organizations-parent?parentId=-1')
 }
 
 async function postTest() {
@@ -157,6 +157,6 @@ async function putTest() {
 // })
 
 
-putTest().then((data) => {
+getOrganizationsByParent().then((data) => {
   console.log(data)
 })

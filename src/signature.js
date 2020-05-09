@@ -1,3 +1,9 @@
+/*
+ * @Description: 未描述
+ * @Author: danielmlc
+ * @Date: 2019-08-22 09:29:25
+ * @LastEditTime: 2019-11-04 14:27:42
+ */
 const CryptoJS = require('crypto-js')
 
 /**

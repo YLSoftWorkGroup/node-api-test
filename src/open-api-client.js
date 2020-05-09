@@ -105,3 +105,4 @@ function resolveError (err) {
 }
 
 module.exports = { OpenApiClient }
+
